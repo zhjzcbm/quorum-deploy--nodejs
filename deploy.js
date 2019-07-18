@@ -34,7 +34,7 @@ if (argv.length < 3) {
 					)
     			//获取部署后合约的地址
 			console.log('合约'+file+'的地址为:', res.options.address)
-			console.log("调用合约命令:sudo node calltest.js "+res.options.address)
+			console.log("调用合约命令:sudo node calltest.js "+res.options.address+argv[2])
 			}
 			//estimateTest()
 			deploy()										
@@ -77,7 +77,7 @@ if (argv.length == 3){
 			)
     	//获取部署后合约的地址
 	console.log('合约地址:', res.options.address)
-	console.log("调用合约命令:sudo node calltest.js "+res.options.address)
+	console.log("调用合约命令:sudo node calltest.js "+res.options.address+argv[2])
 	}
 	estimateTest()
 }
@@ -108,7 +108,7 @@ if (argv.length == 4){
     
     		//获取部署后合约的地址
 	console.log('合约地址:', res.options.address)
-	console.log("调用合约命令:sudo node calltest.js "+res.options.address)
+	console.log("调用合约命令:sudo node calltest.js "+res.options.address+argv[2])
 	}
 	deploy()
 }
@@ -139,7 +139,7 @@ if (argv.length == 5){
     
     		//获取部署后合约的地址
 	console.log('合约地址:', res.options.address)
-	console.log("调用合约命令:sudo node calltest.js "+res.options.address)
+	console.log("调用合约命令:sudo node calltest.js "+res.options.address+argv[2])
 	}
 	deploy()
 }
@@ -170,7 +170,7 @@ if (argv.length == 6){
     
     		//获取部署后合约的地址
 	console.log('合约地址:', res.options.address)
-	console.log("调用合约命令:sudo node calltest.js "+res.options.address)
+	console.log("调用合约命令:sudo node calltest.js "+res.options.address +argv[2])
 	}
 	deploy()
 }
@@ -201,7 +201,7 @@ if (argv.length == 7){
     
     		//获取部署后合约的地址
 	console.log('合约地址:', res.options.address)
-	console.log("调用合约命令:sudo node calltest.js "+res.options.address)
+	console.log("调用合约命令:sudo node calltest.js "+res.options.address +argv[2] )
 	}
 	deploy()
 }
@@ -232,7 +232,7 @@ if (argv.length == 8){
     
     		//获取部署后合约的地址
 	console.log('合约地址:', res.options.address)
-	console.log("调用合约命令:sudo node calltest.js "+res.options.address)
+	console.log("调用合约命令:sudo node calltest.js "+res.options.address + argv[2])
 	}
 	deploy()
 }
@@ -263,7 +263,7 @@ if (argv.length == 9){
     
     		//获取部署后合约的地址
 	console.log('合约地址:', res.options.address)
-	console.log("调用合约命令:sudo node calltest.js "+res.options.address)
+	console.log("调用合约命令:sudo node calltest.js "+res.options.address + argv[2])
 	}
 	deploy()
 }
@@ -294,7 +294,7 @@ if (argv.length == 10){
     
     		//获取部署后合约的地址
 	console.log('合约地址:', res.options.address)
-	console.log("调用合约命令:sudo node calltest.js "+res.options.address)
+	console.log("调用合约命令:sudo node calltest.js "+res.options.address + argv[2])
 	}
 	deploy()
 }
