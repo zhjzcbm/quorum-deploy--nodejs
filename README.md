@@ -1,5 +1,3 @@
-# quorum-deploy--nodejs
-半自动部署公有合约以及私有合约
 # 自制quorum部署合约框架
 
 ## 环境准备
