@@ -42,11 +42,7 @@ node compile.js test
 
 **注意我这里必须要 合约文件名和 合约名 相同才行。大小写也要一样**
 
-<<<<<<< HEAD
 **如果编译的时候不输入合约参数**，**它默认编译所有存放在solidity文件夹下的合约文件.**
-=======
-如果编译的时候不输入合约参数，它默认编译所有存放在solidity文件夹下的合约文件.
->>>>>>> e279129311341788ba2fd77fb09951670564cba7
 
 编译时注意合约版本
 
@@ -116,7 +112,6 @@ node  private_deploy 192.168.1.100 1
 
 这里的1代表批量部署所有私有合约到IP对应节点(暂时不支持输入构造函数参数)
 
-<<<<<<< HEAD
 
 
 ### getContractList.js
@@ -143,10 +138,11 @@ node postabi.js set  合约地址
 
 ## 常见错误
 
-####  错误1：
+#### 错误1：
 
 ```
 UnhandledPromiseRejectionWarning: Error: Invalid JSON RPC response: ""
+
 ```
 
 是因为脚本默认连接本地供应商 地址和端口默认是127.0.0.1:22000的
@@ -159,6 +155,7 @@ UnhandledPromiseRejectionWarning: Error: Invalid JSON RPC response: ""
 
 ```
 Error: Invalid number of parameters for "undefined". Got 0 expected 2!
+
 ```
 
 这个问题是在部署合约的时候会碰到  原因是 合约有构造函数 需要输入参数来部署。
@@ -172,6 +169,7 @@ Error: Invalid number of parameters for "undefined". Got 0 expected 2!
 ```
 [zyc@zq7 quorum-deploy]$ node deploy.js test1 1 2
 web3版本: 1.0.0-beta.35
+
 ```
 
 需要检查部署脚本里连接的供应商IP及端口是否填错
@@ -182,6 +180,7 @@ web3版本: 1.0.0-beta.35
 
 ```
  Error: Returned values aren't valid, did it run Out of Gas?
+
 ```
 
 这个是因为web3.js的一个bug如果你是web3 1.0.0-beta.36版本的话降级到web3 1.0.0-beta.35即可解决
@@ -190,6 +189,7 @@ web3版本: 1.0.0-beta.35
 
 ```
 sudo npm i web3@1.0.0-beta.35 --save
+
 ```
 
 #### 错误5:
@@ -200,8 +200,7 @@ sudo npm i web3@1.0.0-beta.35 --save
 
 ```
 Error: Returned error: Non-200 status code: &{Status:500 Internal Server Error StatusCode:500 Proto:HTTP/1.1 ProtoMajor:1 ProtoMinor:1 Header:map[Date:[Mon, 22 Jul 2019 03:38:30 GMT] Server:[Warp/3.2.13]] Body:0xc42020f7c0 ContentLength:-1 TransferEncoding:[chunked] Close:false Uncompressed:false Trailer:map[] Request:0xc4200ec600 TLS:<nil>}
+
 ```
 
 说明你的公钥输入错误。务必检查一遍
-=======
->>>>>>> e279129311341788ba2fd77fb09951670564cba7
