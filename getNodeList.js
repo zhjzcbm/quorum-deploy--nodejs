@@ -11,5 +11,3 @@ request('http://localhost:22004/getNodeList', function (error, response, body) {
         }
     })
 
-
-
